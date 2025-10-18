@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Phuc Nguyen</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+<header>
+  <h1>Contact Me</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html">Skills</a>
+  <a href="projects.html">Projects</a>
+  <a href="resume.html">Resume</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Get in Touch</legend>
+
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" />
+
+      <label for="topic">Topic:</label>
+      <select id="topic" name="topic">
+        <optgroup label="Message Type">
+          <option value="project">Project Inquiry</option>
+          <option value="job">Job Offer</option>
+          <option value="other">Other</option>
+        </optgroup>
+      </select>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <input type="submit" value="Send" />
+      <input type="reset" value="Reset" />
+    </fieldset>
+  </form>
+</main>
+
+<footer>
+  <p>
+    © 2025 Phuc Nguyen |
+    <a href="map.html">Find me</a>
+  </p>
+</footer>
+</body>
+</html>
